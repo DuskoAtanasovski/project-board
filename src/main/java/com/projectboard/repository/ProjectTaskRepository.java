@@ -7,5 +7,7 @@ import com.projectboard.domain.ProjectTask;
 
 @Repository
 public interface ProjectTaskRepository extends CrudRepository<ProjectTask, Long>{
+	
+	ProjectTask getById(Long id);
 
 }
