@@ -24,3 +24,7 @@ export const getBackLog = () => async (dispatch) => {
     payload: res.data,
   });
 };
+
+export const deleteProjectTask = (pt_id) => async (dispatch) => {
+  await axios.delete(`http://localhost:8080/api/board/${pt_id}`);
+};
